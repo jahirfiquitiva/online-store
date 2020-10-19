@@ -3,29 +3,19 @@ import {
   filterNotUndefined, mapBrand, mapCategory, mapContentfulEntry, mapProduct
 } from '@utils/mapEntryTypes';
 
+const getEntriesForContentType = async (contentType, mapFunction) => {
+  const itemsInContentful = await client.getEntries({
+    content_type: contentType
+  });
+  const { items = [] } = itemsInContentful;
+  return filterNotUndefined(items.map(mapContentfulEntry).map(mapFunction));
+};
+
 export async function fetchEntries() {
-  const productsInContentful = await client.getEntries({
-    content_type: 'product'
-  });
-  const { items: productsItems = [] } = productsInContentful;
-
-  const categoriesInContentful = await client.getEntries({
-    content_type: 'category'
-  });
-  const { items: categoriesItems = [] } = categoriesInContentful;
-
-  const brandsInContentful = await client.getEntries({
-    content_type: 'brand'
-  });
-  const { items: brandsItems = [] } = brandsInContentful;
-  
   return {
-    categories: filterNotUndefined(
-      categoriesItems.map(mapContentfulEntry).map(mapCategory)),
-    products: filterNotUndefined(
-      productsItems.map(mapContentfulEntry).map(mapProduct)),
-    brands: filterNotUndefined(
-      brandsItems.map(mapContentfulEntry).map(mapBrand)),
+    categories: await getEntriesForContentType('category', mapCategory),
+    products: await getEntriesForContentType('product', mapProduct),
+    brands: await getEntriesForContentType('brand', mapBrand),
   };
 }
 
