@@ -3,8 +3,11 @@ import styles from '../styles/Home.module.css';
 import { fetchEntries } from '@utils/getEntries';
 
 export default function Home({ products, brands, categories }) {
+  console.log('Products:')
   console.table(products);
+  console.log('Brands:')
   console.table(brands);
+  console.log('Categories:')
   console.table(categories);
 
   return (
