@@ -1,30 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Online Store
 
-## Getting Started
+Online store built with NextJS and Contentful, deployed on Vercel
 
-First, run the development server:
+## Details
+I'm currently doing a series of streams where I will be working on this app: an online store which gets products from contentful, is built using NextJS and deployed on Vercel
 
+## Features
+- [ ] Main site showing featured product (a single one), featured brands (4) and 5 products per category
+- [ ] Search site showing matching products, brands and categories
+- [ ] Product details page showing a gallery of images with zoom capabilities
+- [ ] Category details page showing the whole list of category products with pagination
+- [ ] Local cart 
+- [ ] Pseudo-checkout by sending email to "company"
+- More ideas are welcome… (please open issues if you want to suggest something)
+
+## Local Development
+
+1. Create a `.env` file with the following environment variables. (You must create a [contentful](https://contentful.com) space before):
 ```bash
-npm run dev
-# or
-yarn dev
+CONTENTFUL_SPACE_ID=A0b1C2
+CONTENTFUL_ACCESS_TOKEN=a1Bc2d3
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Run `run dev` in terminal
