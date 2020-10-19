@@ -12,7 +12,8 @@ I'm currently doing a series of streams where I will be working on this app: an 
 - [ ] Category details page showing the whole list of category products with pagination
 - [ ] Local cart 
 - [ ] Pseudo-checkout by sending email to "company"
-- More ideas are welcome… (please open issues if you want to suggest something)
+
+*More ideas are welcome… (please [open an issue](https://github.com/jahirfiquitiva/online-store/issues/new) with yours if you want to suggest something)*
 
 ## Local Development
 
