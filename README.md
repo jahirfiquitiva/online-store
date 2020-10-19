@@ -5,6 +5,9 @@ Online store built with NextJS and Contentful, deployed on Vercel
 ## Details
 I'm currently doing a series of streams where I will be working on this app: an online store which gets products from contentful, is built using NextJS and deployed on Vercel
 
+## Videos
+1. [Part 1](https://www.twitch.tv/videos/774600398) - Designing website, setting up contentful, adding functions to get data from contentful
+
 ## Features
 - [ ] Main site showing featured product (a single one), featured brands (4) and 5 products per category
 - [ ] Search site showing matching products, brands and categories
