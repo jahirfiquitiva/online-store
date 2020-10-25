@@ -52,7 +52,8 @@
 }
 
 .featuredProduct .content .price {
-  font-size: 1.6rem;
+  font-size: var(--h4);
+  padding: 1.6rem 0;
 }
 
 .featuredProduct .content button {

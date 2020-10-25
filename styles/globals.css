@@ -26,7 +26,8 @@ body {
 }
 
 body {
-  padding-top: calc(calc(var(--base-toolbar-height) * 2) + 1.2rem);
+  padding-top: calc(calc(var(--base-toolbar-height) * 2) + 0.6rem);
+  padding-bottom: 1.6rem;
 }
 
 h1 {

@@ -1,6 +1,6 @@
 .toolbar {
   background-color: var(--toolbar-background-color);
-  height: calc(var(--base-toolbar-height) * 2);
+  height: calc(calc(var(--base-toolbar-height) * 2) - 0.8rem);
   -webkit-box-shadow: 0 4px 4px -2px rgba(75, 123, 236, 0.32);
   box-shadow: 0 4px 4px -2px rgba(75, 123, 236, 0.32);
   position: fixed;
