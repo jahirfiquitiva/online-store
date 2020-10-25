@@ -1,5 +1,7 @@
 import { fetchEntries } from '@utils/getEntries';
 import Toolbar from '@components/global/toolbar/toolbar';
+import FeaturedProduct
+  from '@components/index/featured-product/featured-product';
 
 export default function Home({ products, brands, categories }) {
   console.log('Products:')
@@ -9,9 +11,12 @@ export default function Home({ products, brands, categories }) {
   console.log('Categories:')
   console.table(categories);
 
-  return (
+  return (<>
     <Toolbar/>
-  );
+    <div className={'max-width-wrapper'}>
+      <FeaturedProduct product={products[0]}/>
+    </div>
+  </>);
 }
 
 export async function getServerSideProps() {
