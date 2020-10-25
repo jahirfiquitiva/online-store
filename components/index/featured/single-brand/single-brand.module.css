@@ -1,7 +1,7 @@
 .singleBrand {
   --brand-min-height: 6.4rem;
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: var(--card-border-radius);
   -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.32);
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.32);
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -9,11 +9,13 @@
   background-position: center;
   background-size: cover;
   min-height: var(--brand-min-height);
+  height: 100%;
 }
 
 .singleBrand .overlay {
   background-color: rgba(0, 0, 0, 0.12);
-  height: var(--brand-min-height);
+  height: 100%;
+  border-radius: var(--card-border-radius);
 }
 
 .singleBrand .content {
@@ -24,5 +26,6 @@
   color: #fff;
   text-transform: uppercase;
   height: 100%;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
+  letter-spacing: .05rem;
 }

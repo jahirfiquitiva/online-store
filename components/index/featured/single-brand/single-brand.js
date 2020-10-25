@@ -1,8 +1,8 @@
 import styles from './single-brand.module.css';
 
 const SingleBrand = ({ brandName, brandImage }) => {
-
-  return (<div
+  return (<a
+    href={'#'}
     className={styles.singleBrand}
     style={{
       backgroundImage: `url(${brandImage.url})`
@@ -12,7 +12,7 @@ const SingleBrand = ({ brandName, brandImage }) => {
         <p>{brandName}</p>
       </div>
     </div>
-  </div>);
+  </a>);
 };
 
 export default SingleBrand;

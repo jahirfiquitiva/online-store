@@ -3,6 +3,7 @@
   --on-primary-color: #fff;
   --toolbar-background-color: rgba(75, 123, 236, 0.24);
   --on-toolbar-color: #212121;
+  --card-border-radius: 8px;
 }
 
 html,

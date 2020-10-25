@@ -1,0 +1,19 @@
+.featured {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto repeat(2, 1fr);
+  grid-gap: 1.2rem;
+}
+
+.featured .productTitle {
+  grid-column: 1 / span 2;
+}
+
+.featured .brandsTitle {
+  grid-column: 3 / span 2;
+}
+
+.featured .featuredProduct {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
