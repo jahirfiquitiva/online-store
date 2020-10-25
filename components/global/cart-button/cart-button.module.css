@@ -1,0 +1,25 @@
+.cartButton {
+  position: relative;
+  width: 48px;
+  height: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cartButton::before {
+  position: absolute;
+  content: '2';
+  top: -.2rem;
+  right: 0;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  font-size: .85rem;
+  padding: .2rem .05rem 0;
+  background-color: #fc5c65;
+}
+
+.cartButton svg path {
+  fill: var(--on-toolbar-color) !important;
+}

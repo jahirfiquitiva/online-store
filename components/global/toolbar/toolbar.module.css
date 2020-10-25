@@ -2,6 +2,8 @@
   --toolbar-height: 4rem;
   background-color: var(--toolbar-background-color);
   height: var(--toolbar-height);
+  -webkit-box-shadow: 0 4px 4px -2px rgba(75, 123, 236, 0.32);
+  box-shadow: 0 4px 4px -2px rgba(75, 123, 236, 0.32);
 }
 
 .toolbarElements {
