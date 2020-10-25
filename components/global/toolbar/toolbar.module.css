@@ -1,9 +1,11 @@
 .toolbar {
-  --toolbar-height: 4rem;
   background-color: var(--toolbar-background-color);
-  min-height: var(--toolbar-height);
+  height: calc(var(--base-toolbar-height) * 2);
   -webkit-box-shadow: 0 4px 4px -2px rgba(75, 123, 236, 0.32);
   box-shadow: 0 4px 4px -2px rgba(75, 123, 236, 0.32);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .toolbarElements {
@@ -42,6 +44,10 @@
 }
 
 @media (min-width: 768px) {
+  .toolbar {
+    height: var(--base-toolbar-height);
+  }
+
   .toolbarElements {
     grid-template-columns: auto 1fr auto;
   }

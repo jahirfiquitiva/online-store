@@ -5,11 +5,13 @@
 }
 
 .featured .productTitle {
+  margin-bottom: .4rem;
   grid-column: 1 / span 2;
   grid-row: 1;
 }
 
 .featured .brandsTitle {
+  margin-bottom: .4rem;
   grid-column: 1 / span 2;
   grid-row: 3;
 }
