@@ -2,6 +2,8 @@ import { fetchEntries } from '@utils/getEntries';
 import Toolbar from '@components/global/toolbar/toolbar';
 import FeaturedProduct
   from '@components/index/featured-product/featured-product';
+import SingleBrand
+  from '@components/index/featured-brands/single-brand/single-brand';
 
 export default function Home({ products, brands, categories }) {
   console.log('Products:')
@@ -15,6 +17,7 @@ export default function Home({ products, brands, categories }) {
     <Toolbar/>
     <div className={'max-width-wrapper'}>
       <FeaturedProduct product={products[0]}/>
+      <SingleBrand {...brands[0]}/>
     </div>
   </>);
 }

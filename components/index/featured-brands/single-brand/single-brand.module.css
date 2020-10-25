@@ -1,0 +1,28 @@
+.singleBrand {
+  --brand-min-height: 6.4rem;
+  background-color: #fff;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.32);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: var(--brand-min-height);
+}
+
+.singleBrand .overlay {
+  background-color: rgba(0, 0, 0, 0.12);
+  height: var(--brand-min-height);
+}
+
+.singleBrand .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  height: 100%;
+  font-size: 1.2rem;
+}
