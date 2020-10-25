@@ -3,13 +3,29 @@
   border-radius: var(--card-border-radius);
   -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.32);
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.32);
-  padding: 1.2rem 1.6rem;
   border: 1px solid rgba(0, 0, 0, 0.12);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 12rem;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.featuredProduct .overlay {
+  --gradient-first-color: rgba(255, 255, 255, 1);
+  --gradient-second-color: rgba(255, 255, 255, .65);
+  --gradient-third-color: rgba(255, 255, 255, 0);
+  background: var(--gradient-first-color);
+  background: -moz-linear-gradient(90deg, var(--gradient-first-color) 0%, var(--gradient-second-color) 65%, var(--gradient-third-color) 100%);
+  background: -webkit-linear-gradient(90deg, var(--gradient-first-color) 0%, var(--gradient-second-color) 65%, var(--gradient-third-color) 100%);
+  background: linear-gradient(90deg, var(--gradient-first-color) 0%, var(--gradient-second-color) 65%, var(--gradient-third-color) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+  height: 100%;
+  border-radius: var(--card-border-radius);
+  padding: 1.2rem 1.6rem;
+  flex: 1;
 }
 
 @media (min-width: 960px) {
