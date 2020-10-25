@@ -8,6 +8,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 18rem;
+  min-height: 12rem;
   height: 100%;
+}
+
+@media (min-width: 960px) {
+  .featuredProduct {
+    min-height: 18rem;
+  }
 }
