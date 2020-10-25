@@ -9,6 +9,8 @@
     "export": "next export"
   },
   "dependencies": {
+    "@mdi/js": "^5.8.55",
+    "@mdi/react": "^1.4.0",
     "contentful": "^7.14.8",
     "next": "9.5.5",
     "react": "16.14.0",

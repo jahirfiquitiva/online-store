@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #4B7BEC;
+  --on-primary-color: #fff;
+  --toolbar-background-color: rgba(75,123,236,0.24);
+  --on-toolbar-color: #212121;
+}
+
 html,
 body {
   padding: 0;

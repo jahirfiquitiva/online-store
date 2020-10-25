@@ -1,0 +1,30 @@
+.searchBar {
+  flex: 1;
+  margin: 0 5.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.searchBar input {
+  padding: .8rem 1.6rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+}
+
+.searchBar button {
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  border: none;
+  margin-left: 0.8rem;
+  height: 100%;
+  width: 48px;
+}
+
+.searchBar button svg path {
+  fill: var(--on-primary-color) !important;
+}
