@@ -1,0 +1,17 @@
+.toolbar {
+  --toolbar-height: 3.6rem;
+  background-color: #4B7BEC;
+  height: var(--toolbar-height);
+}
+
+.toolbarElements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: var(--toolbar-height);
+  padding: .8rem 0;
+}
+
+.toolbarTitle {
+  color: #fff;
+}
