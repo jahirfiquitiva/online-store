@@ -1,6 +1,9 @@
 import { usePalette } from 'react-palette';
 import hexToRGB from '@utils/hexToRgb';
 import styles from './featured-product.module.css';
+import formatPrice from '@utils/formatPrice';
+import Icon from '@mdi/react';
+import { mdiCartPlus } from '@mdi/js';
 
 const FeaturedProduct = ({ product }) => {
   const { productName: name, productPrice: price, brand, mainImage } = product;
@@ -14,13 +17,20 @@ const FeaturedProduct = ({ product }) => {
     <div
       className={styles.overlay}
       style={{
-        '--gradient-first-color': hexToRGB(colors.muted, 1),
-        '--gradient-second-color': hexToRGB(colors.muted, .5),
-        '--gradient-third-color': hexToRGB(colors.muted, 0)
+        '--gradient-first-color': hexToRGB(colors.vibrant, 1),
+        '--gradient-second-color': hexToRGB(colors.vibrant, .5),
+        '--gradient-third-color': hexToRGB(colors.vibrant, 0)
       }}>
-      <p>{name}</p>
-      <p>{brand.brandName}</p>
-      <p>{price}</p>
+      <div className={styles.content}>
+        <div>
+          <h6>{name}</h6>
+          <p className={styles.brand}>{brand.brandName}</p>
+        </div>
+        <p className={styles.price}>{formatPrice(price)}</p>
+        <button>
+          <Icon path={mdiCartPlus} size={1}/>Add To Cart
+        </button>
+      </div>
     </div>
   </div>);
 };

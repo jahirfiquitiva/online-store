@@ -24,9 +24,51 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
   height: 100%;
   border-radius: var(--card-border-radius);
-  padding: 1.2rem 1.6rem;
+  padding: 1.6rem;
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
+
+.featuredProduct .content {
+  flex: 1;
+  height: 100%;
+  max-width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.featuredProduct .content h6 {
+  font-size: var(--h4);
+  margin-bottom: 0.8rem;
+}
+
+.featuredProduct .content .brand {
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+}
+
+.featuredProduct .content .price {
+  font-size: 1.6rem;
+}
+
+.featuredProduct .content button {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  background: none;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.36);
+  border-radius: 6px;
+}
+
+.featuredProduct .content button svg {
+  margin-right: .6rem;
+}
+
 
 @media (min-width: 960px) {
   .featuredProduct {

@@ -25,7 +25,10 @@
   color: #fff;
   text-transform: uppercase;
   height: 100%;
-  font-size: 1.35rem;
+}
+
+.singleBrand .content p {
+  font-size: var(--h5);
   letter-spacing: .05rem;
 }
 

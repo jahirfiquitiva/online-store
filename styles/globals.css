@@ -4,6 +4,14 @@
   --toolbar-background-color: rgba(75, 123, 236, 0.24);
   --on-toolbar-color: #212121;
   --card-border-radius: 8px;
+
+  --base-font-size: 1rem;
+  --h6: var(--base-font-size);
+  --h5: calc(var(--base-font-size) * 1.2);
+  --h4: calc(var(--base-font-size) * 1.5);
+  --h3: calc(var(--base-font-size) * 1.8);
+  --h2: calc(var(--base-font-size) * 2.2);
+  --h1: calc(var(--base-font-size) * 2.7);
 }
 
 html,
@@ -12,15 +20,50 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: var(--h6);
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6, p {
+  font-size: var(--h6);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
 }
 
 .max-width-wrapper {
