@@ -1,16 +1,15 @@
 .toolbar {
   --toolbar-height: 4rem;
   background-color: var(--toolbar-background-color);
-  height: var(--toolbar-height);
+  min-height: var(--toolbar-height);
   -webkit-box-shadow: 0 4px 4px -2px rgba(75, 123, 236, 0.32);
   box-shadow: 0 4px 4px -2px rgba(75, 123, 236, 0.32);
 }
 
 .toolbarElements {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: var(--toolbar-height);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 0.4rem;
   padding: .6rem 0;
 }
 
@@ -18,4 +17,42 @@
   color: var(--on-toolbar-color);
   font-weight: 600;
   font-size: 1.2rem;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+}
+
+.toolbarTitle a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toolbarSearch {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+}
+
+.toolbarCartButton {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .toolbarElements {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .toolbarSearch {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .toolbarCartButton {
+    grid-column: 3;
+    grid-row: 1;
+  }
 }

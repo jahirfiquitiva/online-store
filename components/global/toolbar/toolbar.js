@@ -6,9 +6,15 @@ const Toolbar = () => {
   return (<div className={styles.toolbar}>
     <div className={'max-width-wrapper'}>
       <div className={styles.toolbarElements}>
-        <p className={styles.toolbarTitle}>Tienda Virtual</p>
-        <SearchBar/>
-        <CartButton/>
+        <div className={styles.toolbarTitle}>
+          <a href={'/'}>Tienda Virtual</a>
+        </div>
+        <div className={styles.toolbarSearch}>
+          <SearchBar/>
+        </div>
+        <div className={styles.toolbarCartButton}>
+          <CartButton/>
+        </div>
       </div>
     </div>
   </div>);

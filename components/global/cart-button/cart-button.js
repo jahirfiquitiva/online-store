@@ -1,6 +1,6 @@
 import Icon from '@mdi/react';
 import { mdiCartOutline } from '@mdi/js';
-import styles from './cart-button.module.css'
+import styles from './cart-button.module.css';
 
 const CartButton = () => {
   return (<button className={styles.cartButton}>
